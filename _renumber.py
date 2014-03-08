@@ -21,6 +21,7 @@ order = (
     'function_parameters_by_reference',
     'function_calls',
     'variadic',
+    'lambda',
     'debugging',
     'exceptions',
     'classes',
