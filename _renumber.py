@@ -11,11 +11,12 @@ order = (
     'if',
     'while',
     'for',
-    'functions',
+    'pass',
     'files',
     'csv_files',
     'csv_file_with_header',
     'type_conversion',
+    'functions',
 )
 
 my_dir_path = os.path.dirname(__file__)
