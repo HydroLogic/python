@@ -23,3 +23,20 @@ print me.SPECIES # Not a method, just a variable attached to the instance
 # http://docs.python.org/2/library/datetime
 # Calling datetime.now() creates an instance of the datetime class
 # Then you access it with some_datetime.year, etc., just like me. above
+
+# str is also a class, albeit a special one. When you do:
+s = "A string"
+# s is now an instance of the class str
+print "String type", type(s), s.__class__.__name__
+# And we're just calling methods on that instance:
+s.capitalize() # str.capitalize(s)
+# The str class is documented here:
+# http://docs.python.org/2/library/stdtypes.html#string-methods
+
+# The same goes for integers, floats, et al.
+i = 129
+print "Integer type", type(i)
+print "Number of bits in the binary representation of the integer", i.bit_length()
+
+# Unlike some other languages such as C or Java, there are no primitive types in Python.
+# Everything is an instance of some class.

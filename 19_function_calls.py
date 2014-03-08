@@ -4,14 +4,19 @@ import csv
 # csv_file_path is required, tree is not
 def read_csv(csv_file_path, tree=True):
     """
-    Read a CSV file. This is documentation.
+    Read a CSV file.
 
     @param csv_file_path path to a .csv file
     @type csv_file_path str
-    @param tree whether to return a tree or a list of row lists
+    @param tree optional, whether to return a tree or a list of row lists
     @type tree bool
     @return a tree representing the CSV contents or a list of the CSV's rows
     """
+
+    # ^ That is a documentation string in the standard format.
+    # In the Python standard library documentation you'll also see documentation of the form
+    # read_csv(csv_file_path[, tree])
+    # The [] are an ancient notation indicating that something is optional.
 
     if tree:
         advanced_tree = {}
