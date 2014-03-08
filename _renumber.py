@@ -16,6 +16,7 @@ order = (
     'csv_files',
     'csv_file_with_header',
     'type_conversion',
+    'libraries',
     'functions',
     'function_parameters_by_reference',
     'function_calls',
