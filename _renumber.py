@@ -20,6 +20,8 @@ order = (
     'function_parameters_by_reference',
     'function_calls',
     'variadic',
+    'debugging',
+    'exceptions',
 )
 
 my_dir_path = os.path.dirname(__file__)
