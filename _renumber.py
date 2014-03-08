@@ -17,6 +17,9 @@ order = (
     'csv_file_with_header',
     'type_conversion',
     'functions',
+    'function_parameters_by_reference',
+    'function_calls',
+    'variadic',
 )
 
 my_dir_path = os.path.dirname(__file__)
