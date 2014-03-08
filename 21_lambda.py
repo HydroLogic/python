@@ -42,3 +42,7 @@ print "Ascending", a_list
 cmp_x_y_short_2 = lambda x, y: y - x
 # though the def syntax is preferred if you're going to give a function a name
 a_list.sort(cmp_x_y_short_2)
+
+
+# For more information than you would ever want to know about sorting in Python, see
+# https://wiki.python.org/moin/HowTo/Sorting
