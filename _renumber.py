@@ -23,6 +23,7 @@ order = (
     'variadic',
     'debugging',
     'exceptions',
+    'classes',
 )
 
 my_dir_path = os.path.dirname(__file__)
