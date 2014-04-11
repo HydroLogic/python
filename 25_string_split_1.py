@@ -14,3 +14,6 @@ print "Hello,  world".split()
 
 # Split on multiple characters. Entire separator must match.
 print "Hello, world".split(', ')
+
+# Can also split from the end using .rsplit()
+print "Year,University Name,Student Classification,Resident Status,Headcount".rsplit(',', 2)
