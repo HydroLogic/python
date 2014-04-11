@@ -17,3 +17,7 @@ print "Hello, world".split(', ')
 
 # Can also split from the end using .rsplit()
 print "Year,University Name,Student Classification,Resident Status,Headcount".rsplit(',', 2)
+
+# Related method: .partition()
+# Does a single split and includes the separator, so the result is always a sequence with len <= 3
+print "Year,University Name,Student Classification,Resident Status,Headcount".partition(',')
