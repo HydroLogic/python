@@ -25,7 +25,8 @@ order = (
     'debugging',
     'exceptions',
     'classes',
-    'string_split',
+    'string_split_1',
+    'string_split_2',
 )
 
 my_dir_path = os.path.dirname(__file__)
