@@ -1,0 +1,31 @@
+print 'Single-quoted string'
+print
+
+print "Double-quoted string" # No semantic difference to the above
+print
+
+print '''
+Multi-line
+string
+with triple single-quotes
+'''
+print
+
+x = """
+Multi-line
+string
+with triple double-quotes
+"""
+print 'Lines in x', len(x.splitlines())
+print
+
+x = '''\
+Multi-line string,
+don't include first line
+triple single-quotes
+'''
+print 'Lines in x', len(x.splitlines())
+print
+
+print "String escaping\nThis is on a new line\nHere's a tab\tand so on"
+print
