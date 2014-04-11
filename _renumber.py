@@ -29,6 +29,7 @@ order = (
     'string_split_2',
     'string_join',
     'string_format',
+    'string_re',
 )
 
 my_dir_path = os.path.dirname(__file__)
