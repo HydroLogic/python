@@ -3,7 +3,7 @@
 # See what the file looks like before we parse it.
 with open('varscan.out') as f:
     for line in f.readlines():
-        print line
+        print line.rstrip()
 print
 
 calls = []
@@ -38,4 +38,4 @@ print
 
 print "Variants"
 for call in calls:
-    print call['Chrom'], call['Position'], call['Ref'], call['Var']
+    print call['Chrom'], int(call['Position']), call['Ref'], call['Var']
