@@ -26,6 +26,8 @@ with open('varscan.out') as f:
                 nested_values_dict = {}
                 for nested_header, nested_value in zip(header_split, value_split):
                     nested_values_dict[nested_header] = nested_value
+                # Alternatively, use a dict comprehension with the same semantics as the three lines above:
+                # nested_values_dict = dict((nested_header, nested_value) for nested_header, nested_value in zip(header_split, value_split))
                 call['Nested' + str(len(call))] = nested_values_dict
             else:
                 # Single-value column
