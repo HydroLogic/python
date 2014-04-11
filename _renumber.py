@@ -25,6 +25,7 @@ order = (
     'debugging',
     'exceptions',
     'classes',
+    'string_review',
     'string_split_1',
     'string_split_2',
     'string_join',
