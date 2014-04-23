@@ -36,6 +36,8 @@ The tasks are named taskN.py in the corresponding order.
 * [Python 2.6 cheat sheet](http://rgruet.free.fr/PQR26/PQR2.6.html)
 * [Python pocket reference (book)](http://shop.oreilly.com/product/9780596158095.do)
 
+## Practicing Python ##
+* [Python challenge](http://www.pythonchallenge.com/)
 
 ## Relevant libraries ##
 * [scipy, numpy, Matplotlib](http://www.scipy.org/)
