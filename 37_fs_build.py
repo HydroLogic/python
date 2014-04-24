@@ -27,8 +27,11 @@ for dir_path, subdir_names, file_names in os.walk(ROOT_DIR_PATH):
         print os.path.join(dir_path, file_name)
 print
 
+# Rename a file
+os.rename(os.path.join(ROOT_DIR_PATH, 'temp_file.txt'), os.path.join(ROOT_DIR_PATH, 'temp_file_renamed.txt'))
+
 # Delete a file
-os.unlink(os.path.join(ROOT_DIR_PATH, 'temp_file.txt'))
+os.unlink(os.path.join(ROOT_DIR_PATH, 'temp_file_renamed.txt'))
 os.unlink(os.path.join(ROOT_DIR_PATH, 'temp_dir', 'temp_file_copy.txt'))
 # Delete a directory -- must be empty first
 os.rmdir(os.path.join(ROOT_DIR_PATH, 'temp_dir'))
