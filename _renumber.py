@@ -33,6 +33,8 @@ order = (
     'string_re',
     'fs_review',
     'fs_write',
+    'fs_split',
+    'fs_join',
 )
 
 my_dir_path = os.path.dirname(__file__)
