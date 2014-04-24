@@ -38,6 +38,7 @@ order = (
     'fs_abspath',
     'fs_walk',
     'fs_build',
+    'fs_tempfile',
 )
 
 my_dir_path = os.path.dirname(__file__)
