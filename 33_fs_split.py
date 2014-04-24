@@ -11,6 +11,9 @@ print 'My directory path', my_dir_path
 print 'My file name', my_file_name
 # Splitting a path to a file gives you (parent directory path, file name)
 # Splitting a path to a directory gives you (parent directory path, directory name)
+# Can also do
+assert os.path.dirname(my_file_path) == my_dir_path
+# if you just want the directory.
 
 # Always use os.path.split(path) instead of the string methods path.split or path.rsplit
 # It handles platform-specific path logic that the general string functions don't.
