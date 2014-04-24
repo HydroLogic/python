@@ -9,5 +9,6 @@
 registration/constants.py
 registration/*.csv
 
-# Temporary files
+# Temporary files and directories
+fs_temp
 regents_copy.csv

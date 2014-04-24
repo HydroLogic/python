@@ -37,6 +37,7 @@ order = (
     'fs_join',
     'fs_abspath',
     'fs_walk',
+    'fs_build',
 )
 
 my_dir_path = os.path.dirname(__file__)

@@ -11,6 +11,8 @@ for dir_path, subdir_names, file_names in os.walk(WALK_DIR_PATH):
     print "Subdirectory names in this directory", subdir_names
     print "File names in this directory:", file_names
     for file_name in file_names:
+        # Note that the names are in a platform-specific order, not necessarily alphabetic!
+        # If you want that use 'for file_name in sorted(file_names)'
         file_path = os.path.join(dir_path, file_name)
         print 'File path', file_path
     print
@@ -26,4 +28,3 @@ for name in os.listdir(WALK_DIR_PATH):
     elif os.path.isdir(path):
         print 'Directory', path
     # Other kinds???
-
