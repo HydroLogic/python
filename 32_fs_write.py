@@ -1,5 +1,5 @@
 # We can also write to files using a similar construct:
-with open('regents.csv') as f_in: # Implicit 'r' file mode = open for reading, error if it doesn't exist
+with open('regents.csv',) as f_in: # Implicit 'r' file mode = open for reading, error if it doesn't exist
     with open('regents_copy.csv', 'w+') as f_out: # w = open for writing, + = truncate the file if it already exists
         data = f_in.read()
         f_out.write(data)

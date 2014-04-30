@@ -9,9 +9,10 @@ print '__file__ is always an absolute path:', __file__
 
 my_dir_abspath = os.path.split(__file__)[0]
 print 'Also an absolute path, since we just split it:', my_dir_abspath
+alongside_file_path = os.path.join(my_dir_abspath, 'somefile.txt')
 
 relative_file_name = 'regents.csv'
-with open(relative_file_name) as f:
+with open(os.path.join(my_dir_path, relative_file_name)) as f:
     pass
 # Same as
 relative_file_name = os.path.join('.', 'regents.csv')

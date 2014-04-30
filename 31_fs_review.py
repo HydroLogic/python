@@ -13,7 +13,6 @@ try:
         pass
 finally:
     f.close()
-    pass
 
 # We've used the csv library to parse the lines as we read them:
 with open('regents.csv') as f:

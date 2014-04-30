@@ -16,12 +16,14 @@ with open('varscan.out') as f:
             continue
 
         values = line.split()
+        print 'Values split', values
         values = values[:10] # Drop off the same ugliness
         call = {}
         for header, value in zip(headers, values):
             if ':' in value:
                 # Multi-value column
                 header_split = header.split(':')
+                print 'Header split', header_split
                 value_split = value.split(':')
                 nested_values_dict = {}
                 for nested_header, nested_value in zip(header_split, value_split):

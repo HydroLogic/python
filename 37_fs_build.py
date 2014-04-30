@@ -28,7 +28,10 @@ for dir_path, subdir_names, file_names in os.walk(ROOT_DIR_PATH):
 print
 
 # Rename a file
-os.rename(os.path.join(ROOT_DIR_PATH, 'temp_file.txt'), os.path.join(ROOT_DIR_PATH, 'temp_file_renamed.txt'))
+os.rename(
+    os.path.join(ROOT_DIR_PATH, 'temp_file.txt'),
+    os.path.join(ROOT_DIR_PATH, 'temp_file_renamed.txt')
+)
 
 # Delete a file
 os.unlink(os.path.join(ROOT_DIR_PATH, 'temp_file_renamed.txt'))
