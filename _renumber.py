@@ -41,6 +41,7 @@ order = (
     'fs_tempfile',
     'oop_intro',
     'oop_chinook',
+    'oop_inheritance',
 )
 
 my_dir_path = os.path.dirname(__file__)
