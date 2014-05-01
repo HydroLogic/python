@@ -71,6 +71,7 @@ print
 # Even "immutable" classes like the above can be assigned arbitrary attributes:
 me.other_name = 'Other name'
 print me.other_name
+del me.other_name # Remove the attribute, so that reading me.other_name will cause an exception
 # But don't do this! If you add attributes dynamically in this way the reader
 # has no way of knowing what attributes an instance has by looking at the class
 # definition, which makes code hard to follow.
