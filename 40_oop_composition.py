@@ -1,6 +1,10 @@
 import sqlite3
 
 
+# Album has-a track or list of tracks
+# In object-oriented programming this is called "composition",
+# as opposed to "inheritance" (the next module),
+# which models "is-a" relationships.
 class Album:
     def __init__(self, id, title):
         self.id = id

@@ -6,7 +6,7 @@ class Person(object): # Person inherits object, the root class
     def get_name(self):
         return self.first_name + ' ' + self.last_name
 
-# Student inherits Person; a student "is-a" Person
+# Student inherits Person; a student "is-a" person
 # https://en.wikipedia.org/wiki/Liskov_substitution_principle
 class Student(Person):
     def __init__(self, university_name, **kwds):

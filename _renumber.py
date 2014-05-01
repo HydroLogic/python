@@ -40,8 +40,9 @@ order = (
     'fs_build',
     'fs_tempfile',
     'oop_intro',
-    'oop_chinook',
+    'oop_composition',
     'oop_inheritance',
+    'oop_properties',
 )
 
 my_dir_path = os.path.dirname(__file__)
