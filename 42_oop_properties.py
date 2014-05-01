@@ -65,3 +65,12 @@ class ImmutablePersonWithProperties(object):
 me = ImmutablePersonWithProperties(first_name='Minor', last_name='Gordon')
 print me.get_name()
 print me.first_name # Looks like an access of the variable, but actually calls me.first_name()
+print
+
+
+# Even "immutable" classes like the above can be assigned arbitrary members:
+me.other_name = 'Other name'
+print me.other_name
+# But don't do this! If you add members dynamically in this way the reader
+# has no way of knowing what members an instance has by looking at the class
+# definition, which makes code hard to follow.
