@@ -8,7 +8,7 @@ class Person(object):
 
 me = Person(first_name='Minor', last_name='Gordon')
 print me.get_name() # Fine
-me.first_name = None # The members of Person are mutable
+me.first_name = None # The attributes of Person are mutable
 try:
     print me.get_name() # Adding None and a str, not so good
 except Exception, e:
@@ -16,7 +16,7 @@ except Exception, e:
 print
 
 
-# Head off this sort of error by ensuring that the members of
+# Head off this sort of error by ensuring that the attributes of
 # Person cannot be modified once a Person is created.
 # This is "defensive programming", which is much like "defensive
 # driving": assume the other person will do something stupid.
@@ -68,9 +68,9 @@ print me.first_name # Looks like an access of the variable, but actually calls m
 print
 
 
-# Even "immutable" classes like the above can be assigned arbitrary members:
+# Even "immutable" classes like the above can be assigned arbitrary attributes:
 me.other_name = 'Other name'
 print me.other_name
-# But don't do this! If you add members dynamically in this way the reader
-# has no way of knowing what members an instance has by looking at the class
+# But don't do this! If you add attributes dynamically in this way the reader
+# has no way of knowing what attributes an instance has by looking at the class
 # definition, which makes code hard to follow.

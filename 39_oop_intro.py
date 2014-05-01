@@ -14,7 +14,7 @@ me = Person('Minor', 'Gordon') # Create/"instantiate" Person
                                # Implicitly calls Person.__init__(me, 'Minor', 'Gordon')
 # me is an "instance" of Person
 print me.get_name() # ~ calling Person.get_name(me)
-# The dot syntax just means "access a method or a data member on an instance"
+# The dot syntax just means "access a method or a data attribute on an instance"
 print me.first_name
 
 # SPECIES is a property of all people, independent of instances

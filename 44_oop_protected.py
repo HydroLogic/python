@@ -9,9 +9,9 @@ class Person(object):
     def __init__(self, first_name, last_name):
         # Use _ instead of __, indicating to the reader
         # that we will allow subclasses to directly access and/or modify
-        # the members.
+        # the attributes.
         # The "public" (i.e., any code accessing instances) can
-        # access these members but they should not, by convention.
+        # access these attributes but they should not, by convention.
         self._first_name = first_name
         self._last_name = last_name
 
