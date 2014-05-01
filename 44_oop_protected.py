@@ -40,6 +40,7 @@ class TitledPerson(Person):
         self._first_name = self._first_name.lstrip()
         return self.__title + ' ' + Person.get_name(self)
 
+
 judi = Person(first_name=' Judi', last_name='Dench')
 print judi._first_name # Can do this, but shouldn't
 print judi.get_name()
