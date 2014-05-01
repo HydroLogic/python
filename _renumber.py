@@ -44,6 +44,7 @@ order = (
     'oop_inheritance',
     'oop_properties',
     'oop_method_override',
+    'oop_protected',
 )
 
 my_dir_path = os.path.dirname(__file__)

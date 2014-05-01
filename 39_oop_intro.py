@@ -1,4 +1,6 @@
 class Person:
+    SPECIES = 'Homo sapiens sapiens'
+
     # Method = function declared within a class block
     # First positional parameter is always the instance, traditionally named "self" (vs. "this" in Java or C++)
     def __init__(self, first_name, last_name):
@@ -14,3 +16,9 @@ me = Person('Minor', 'Gordon') # Create/"instantiate" Person
 print me.get_name() # ~ calling Person.get_name(me)
 # The dot syntax just means "access a method or a data member on an instance"
 print me.first_name
+
+# SPECIES is a property of all people, independent of instances
+# It can be accessed via the class
+print 'Species of Person', Person.SPECIES
+# or via an instance
+print 'My species', me.SPECIES
