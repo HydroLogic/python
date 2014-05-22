@@ -7,11 +7,19 @@ class Person:
         self.first_name = first_name
         self.last_name = last_name
 
+    def do_nothing(self):
+        pass
+
     def get_name(self):
+        self.do_nothing()
         return self.first_name + ' ' + self.last_name
 
+#s = str('Words and words')
+#s.split()
 me = Person('Minor', 'Gordon') # Create/"instantiate" Person
                                # Implicitly calls Person.__init__(me, 'Minor', 'Gordon')
+other = Person('John', 'Doe')
+other.get_name()
 # me is an "instance" of Person
 print me.get_name() # ~ calling Person.get_name(me)
 # The dot syntax just means "access a method or a data attribute on an instance"

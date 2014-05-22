@@ -1,5 +1,6 @@
 class Person(object): # Person inherits object, the root class
     def __init__(self, first_name, last_name):
+        object.__init__(self)
         self.first_name = first_name
         self.last_name = last_name
 
@@ -17,6 +18,16 @@ class Student(Person):
 brian = Student(first_name='Brian', last_name='Lois', university_name='Iowa State University')
 minor = Person(first_name='Minor', last_name='Gordon')
 
+
+def Person_get_name(person_dict):
+    return person_dict['first_name'] + ' ' + person_dict['last_name']
+
+person_dict = {'first_name': 'Brian', 'last_name': 'Lois'}
+
+print Person.get_name(person_dict)
+person_dict['first_name'] = None
+print Person.get_name(person_dict)
+print brian.get_name()
 
 if isinstance(brian, Student):
     print 'Brian is a student'

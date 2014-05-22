@@ -6,24 +6,51 @@
 # It is solely a convention.
 
 class Person(object):
+    '''
+    A person class.
+
+    @classvar SPECIES species of the person
+    '''
+
+    SPECIES = 'Homo sapiens sapiens'
+
     def __init__(self, first_name, last_name):
+        '''
+        The constructor of Person
+
+        @param first_name first name of the person
+        @type first_name str
+        @param last_name
+        '''
+
         # Use _ instead of __, indicating to the reader
         # that we will allow subclasses to directly access and/or modify
         # the attributes.
         # The "public" (i.e., any code accessing instances) can
         # access these attributes but they should not, by convention.
-        self._first_name = first_name
-        self._last_name = last_name
+        self.__first_name = first_name
+        self.__last_name = last_name
 
     @property
     def first_name(self):
-        return self._first_name
+        return self.__first_name
 
     @property
     def last_name(self):
-        return self._last_name
+        return self.__last_name
+
+    def _set_last_name(self, last_name):
+        self.__last_name = last_name
 
     def get_name(self):
+        '''
+        Returns the full name of the person.
+
+        Doesn't deal with multiple names.
+
+        @return full name of the person
+        @rtype str
+        '''
         return self.first_name + ' ' + self.last_name
 
 

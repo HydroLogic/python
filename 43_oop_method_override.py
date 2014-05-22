@@ -31,6 +31,7 @@ class TitledPerson(Person):
 
 judi = TitledPerson(first_name='Judi', last_name='Dench', title='Dame')
 print judi.get_name()
+print judi.title
 
 jeremy = Person(first_name='Jeremy', last_name='Paxman')
 print jeremy.get_name()
