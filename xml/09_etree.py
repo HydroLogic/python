@@ -10,5 +10,7 @@ print
 
 print 'All child elements'
 for child in root:
-    print child.tag
+    print child.tag, child.attrib
+    if child.tag.endswith('title'):
+        print 'Title', child.text
 print
