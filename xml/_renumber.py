@@ -4,6 +4,7 @@ order = (
     'dom_parse',
     'dom_childNodes',
     'dom_getElementsByTagName',
+    'dom_getAttribute',
     'dom_createElement',
     'dom_createTextNode',
     'dom_createDocument',
