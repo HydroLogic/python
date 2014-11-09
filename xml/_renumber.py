@@ -7,6 +7,7 @@ order = (
     'dom_getAttribute',
     'dom_createElement',
     'dom_createTextNode',
+    'dom_setAttribute',
     'dom_createDocument',
 )
 
