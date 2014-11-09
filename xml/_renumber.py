@@ -10,6 +10,7 @@ order = (
     'dom_setAttribute',
     'dom_createDocument',
     'etree',
+    'sax',
 )
 
 my_dir_path = os.path.dirname(__file__)
