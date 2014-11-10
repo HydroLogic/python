@@ -11,6 +11,7 @@ order = (
     'dom_createDocument',
     'etree',
     'sax',
+    'html',
 )
 
 my_dir_path = os.path.dirname(__file__)
