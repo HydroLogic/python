@@ -1,17 +1,15 @@
 import os.path
 
 order = (
-    'dom_parse',
-    'dom_childNodes',
-    'dom_getElementsByTagName',
-    'dom_getAttribute',
-    'dom_createElement',
-    'dom_createTextNode',
-    'dom_setAttribute',
-    'dom_createDocument',
-    'etree',
-    'sax',
-    'html',
+    'list_comprehensions',
+    'dict_comprehensions',
+    'generators',
+    'map_reduce',
+    'multiprocessing',
+    'decimal',
+    'unicode',
+    'pickle',
+    'magic_methods',
 )
 
 my_dir_path = os.path.dirname(__file__)
