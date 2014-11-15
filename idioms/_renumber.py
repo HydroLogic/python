@@ -8,7 +8,8 @@ order = (
     'multiprocessing',
     'decimal',
     'pickle',
-    'magic_methods',
+    'operator_overloading',
+    'introspection',
 )
 
 my_dir_path = os.path.dirname(__file__)
