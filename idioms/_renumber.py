@@ -7,7 +7,6 @@ order = (
     'map_reduce',
     'multiprocessing',
     'decimal',
-    'unicode',
     'pickle',
     'magic_methods',
 )
