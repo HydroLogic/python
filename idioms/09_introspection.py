@@ -2,6 +2,9 @@ i = 1
 print 'Integer class', i.__class__
 print 'Integer class name', i.__class__.__name__
 print 'Integer class module', i.__class__.__module__
+print 'Integer doc'
+print int.__doc__
+print
 class MyType(object):
     pass
 print 'MyType module', MyType().__class__.__module__
