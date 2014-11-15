@@ -6,6 +6,7 @@ order = (
     'generators',
     'map_reduce',
     'multiprocessing',
+    'itertools',
     'decimal',
     'pickle',
     'operator_overloading',
