@@ -9,7 +9,8 @@ order = (
     'map_reduce',
     'itertools',
     'multiprocessing',
-    'operator_overloading',
+    'operator_eq',
+    'operator_add',
     'introspection',
 )
 
