@@ -1,14 +1,14 @@
 import os.path
 
 order = (
+    'decimal',
+    'pickle',
     'list_comprehensions',
     'dict_comprehensions',
     'generators',
     'map_reduce',
     'itertools',
     'multiprocessing',
-    'decimal',
-    'pickle',
     'operator_overloading',
     'introspection',
 )
