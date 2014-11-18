@@ -11,6 +11,7 @@ order = (
     'multiprocessing',
     'operator_eq',
     'operator_add',
+    'operator_getattr',
     'introspection',
 )
 
